@@ -1,0 +1,17 @@
+diff -U3 -r sushy-1.3.1-orig/setup.py sushy-1.3.1/setup.py
+--- sushy-1.3.1-orig/setup.py	2018-02-05 22:36:53.000000000 +0100
++++ sushy-1.3.1/setup.py	2018-06-26 10:30:01.808557697 +0200
+@@ -25,5 +25,11 @@
+     pass
+ 
+ setuptools.setup(
+-    setup_requires=['pbr>=2.0.0'],
+-    pbr=True)
++    name='sushy',
++    author='OpenStack',
++    author_email='openstack-dev@lists.openstack.org',
++    url='https://docs.openstack.org/sushy',
++    version='@@REDHATVERSION@@',
++    description='Sushy is a small Python library to communicate with Redfish based systems',
++    packages=setuptools.find_packages(),
++)
